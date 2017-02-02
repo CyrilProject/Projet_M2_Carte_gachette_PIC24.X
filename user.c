@@ -94,5 +94,5 @@ void InitINT(void)
     
     IEC1bits.CNIE = 1;      /* Enable CN Interruption */
     
-    
+    IPC4bits.CNIP = 0b111;   /* Highest Priority Level INT2 */
 }

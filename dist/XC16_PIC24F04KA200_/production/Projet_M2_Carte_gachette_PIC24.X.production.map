@@ -64,11 +64,11 @@ Program Memory  [Origin = 0x200, Length = 0x900]
 section                    address   length (PC units)   length (bytes) (dec)
 -------                    -------   -----------------   --------------------
 .text                        0x200               0x142           0x1e3  (483)
-.text                        0x342                0xbe           0x11d  (285)
-.dinit                       0x400                 0x8             0xc  (12)
-.text                        0x408                 0x6             0x9  (9)
+.text                        0x342                0xc4           0x126  (294)
+.dinit                       0x406                 0x8             0xc  (12)
+.text                        0x40e                 0x6             0x9  (9)
 
-                 Total program memory used (bytes):          0x315  (789) 22%
+                 Total program memory used (bytes):          0x31e  (798) 23%
 
 
 Ivt Memory  [Origin = 0x4, Length = 0xfc]
@@ -133,11 +133,11 @@ External Symbols in Program Memory (by address):
                   0x0003bc                  _InitUART
                   0x0003dc                  _InitINT
                   0x0003f4                  _main
-                  0x000408                  _ConfigureOscillator
+                  0x00040e                  _ConfigureOscillator
 
 External Symbols in Program Memory (by name):
 
-                  0x000408                  _ConfigureOscillator
+                  0x00040e                  _ConfigureOscillator
                   0x000342                  _GetChar
                   0x0003ae                  _InitGPIO
                   0x0003dc                  _InitINT
@@ -266,36 +266,36 @@ __FDS
 .comment
  *(.comment)
 
-.debug_info       0x000000       0x16d8
+.debug_info       0x000000       0x16fd
  *(.debug_info)
  .debug_info      0x000000         0xc0 build/XC16_PIC24F04KA200_/production/configuration_bits.o
  .debug_info      0x0000c0        0x28a build/XC16_PIC24F04KA200_/production/interrupts.o
- .debug_info      0x00034a        0x173 build/XC16_PIC24F04KA200_/production/main.o
- .debug_info      0x0004bd        0x14a build/XC16_PIC24F04KA200_/production/system.o
- .debug_info      0x000607        0x269 build/XC16_PIC24F04KA200_/production/traps.o
- .debug_info      0x000870        0xa95 build/XC16_PIC24F04KA200_/production/user.o
- .debug_info      0x001305        0x3d3 build/XC16_PIC24F04KA200_/production/uart.o
+ .debug_info      0x00034a        0x198 build/XC16_PIC24F04KA200_/production/main.o
+ .debug_info      0x0004e2        0x14a build/XC16_PIC24F04KA200_/production/system.o
+ .debug_info      0x00062c        0x269 build/XC16_PIC24F04KA200_/production/traps.o
+ .debug_info      0x000895        0xa95 build/XC16_PIC24F04KA200_/production/user.o
+ .debug_info      0x00132a        0x3d3 build/XC16_PIC24F04KA200_/production/uart.o
  *(.gnu.linkonce.wi.*)
 
-.debug_abbrev     0x000000        0x3a6
+.debug_abbrev     0x000000        0x3b7
  *(.debug_abbrev)
  .debug_abbrev    0x000000         0x1f build/XC16_PIC24F04KA200_/production/configuration_bits.o
  .debug_abbrev    0x00001f         0x90 build/XC16_PIC24F04KA200_/production/interrupts.o
- .debug_abbrev    0x0000af         0x54 build/XC16_PIC24F04KA200_/production/main.o
- .debug_abbrev    0x000103         0x34 build/XC16_PIC24F04KA200_/production/system.o
- .debug_abbrev    0x000137         0x7d build/XC16_PIC24F04KA200_/production/traps.o
- .debug_abbrev    0x0001b4         0xfa build/XC16_PIC24F04KA200_/production/user.o
- .debug_abbrev    0x0002ae         0xf8 build/XC16_PIC24F04KA200_/production/uart.o
+ .debug_abbrev    0x0000af         0x65 build/XC16_PIC24F04KA200_/production/main.o
+ .debug_abbrev    0x000114         0x34 build/XC16_PIC24F04KA200_/production/system.o
+ .debug_abbrev    0x000148         0x7d build/XC16_PIC24F04KA200_/production/traps.o
+ .debug_abbrev    0x0001c5         0xfa build/XC16_PIC24F04KA200_/production/user.o
+ .debug_abbrev    0x0002bf         0xf8 build/XC16_PIC24F04KA200_/production/uart.o
 
-.debug_line       0x000000        0x36d
+.debug_line       0x000000        0x36f
  *(.debug_line)
  .debug_line      0x000000         0x1a build/XC16_PIC24F04KA200_/production/configuration_bits.o
  .debug_line      0x00001a         0xa5 build/XC16_PIC24F04KA200_/production/interrupts.o
- .debug_line      0x0000bf         0x86 build/XC16_PIC24F04KA200_/production/main.o
- .debug_line      0x000145         0x38 build/XC16_PIC24F04KA200_/production/system.o
- .debug_line      0x00017d         0xa0 build/XC16_PIC24F04KA200_/production/traps.o
- .debug_line      0x00021d         0xa9 build/XC16_PIC24F04KA200_/production/user.o
- .debug_line      0x0002c6         0xa7 build/XC16_PIC24F04KA200_/production/uart.o
+ .debug_line      0x0000bf         0x88 build/XC16_PIC24F04KA200_/production/main.o
+ .debug_line      0x000147         0x38 build/XC16_PIC24F04KA200_/production/system.o
+ .debug_line      0x00017f         0xa0 build/XC16_PIC24F04KA200_/production/traps.o
+ .debug_line      0x00021f         0xa9 build/XC16_PIC24F04KA200_/production/user.o
+ .debug_line      0x0002c8         0xa7 build/XC16_PIC24F04KA200_/production/uart.o
 
 .debug_frame      0x000000        0x254
  *(.debug_frame)
@@ -790,7 +790,7 @@ __c30_signature
  .ivt._MathError
                   0x00000c          0x2 build/XC16_PIC24F04KA200_/production/traps.o
 
-.text             0x000342         0xbe
+.text             0x000342         0xc4
  .text            0x000342         0x6c build/XC16_PIC24F04KA200_/production/uart.o
                   0x000342                  _GetChar
                   0x00034e                  _PutChar
@@ -800,12 +800,12 @@ __c30_signature
                   0x0003ae                  _InitGPIO
                   0x0003bc                  _InitUART
                   0x0003dc                  _InitINT
- .text            0x0003f4          0xc build/XC16_PIC24F04KA200_/production/main.o
+ .text            0x0003f4         0x12 build/XC16_PIC24F04KA200_/production/main.o
                   0x0003f4                  _main
 
-.dinit            0x000400          0x8
- .dinit           0x000400          0x8 data_init
+.dinit            0x000406          0x8
+ .dinit           0x000406          0x8 data_init
 
-.text             0x000408          0x6
- .text            0x000408          0x6 build/XC16_PIC24F04KA200_/production/system.o
-                  0x000408                  _ConfigureOscillator
+.text             0x00040e          0x6
+ .text            0x00040e          0x6 build/XC16_PIC24F04KA200_/production/system.o
+                  0x00040e                  _ConfigureOscillator

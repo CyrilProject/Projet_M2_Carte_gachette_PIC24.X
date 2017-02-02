@@ -20,10 +20,11 @@
 
 #include "system.h"        /* System funct/params, like osc/peripheral config */
 #include "user.h"          /* User funct/params, such as InitApp              */
-
+#include "uart.h"
 /******************************************************************************/
 /* Global Variable Declaration                                                */
 /******************************************************************************/
+
 u8 count = 0;
 u8 flag = 0;
 
@@ -52,6 +53,12 @@ int16_t main(void)
     
     while(1)
     {
-
+        
+        Sleep();
+        if (RCONbits.SLEEP == 1)
+        {
+            PutChar(count);
+        }
+        
     }
 }
